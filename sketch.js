@@ -1,18 +1,20 @@
-var nums = [1, 2, 3, 4, 5];
+var marks = [35,38,42,45,43,34,46,41,48,32];
 
-function array_square(a) {
-  for (var i = 0; i < a.length; i++) {
-    a[i] = a[i] * a[i];
-  }
-  return a;
-}
 
 function setup() {
-  createCanvas(400, 400);
-  var result = array_square(nums);
-  console.log(result);
+  createCanvas(400,400);
+ 
+  for(var i = 0; i<marks.length; i++)
+  { 
+    if(marks[i]>= 45)
+    {
+      console.log(marks[i])
+    }
+  }
+
 }
 
-function draw() {
-  background(220);
+function draw() 
+{
+  background(30);
 }
